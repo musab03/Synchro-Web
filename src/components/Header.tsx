@@ -1,31 +1,37 @@
-'use client'
+"use client";
 
 // src/components/Header.tsx
-import Link from 'next/link';
-import Image from 'next/image';
-import logo from '../../public/images/logo1.png'; 
+import Link from "next/link";
+import Image from "next/image";
+import logo from "../../public/images/ai.svg";
+import ShinyButton from "@/components/magicui/shiny-button";
 
-const Header = () => 
-  
-    <header style={{
-      background: 'linear-gradient(to right, #6dd5ed, #faa3f2)',
-      boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', // example shadow, adjust as needed
-    }}>
-      <div className="container mx-auto flex items-center justify-between p-6">
-        {/* <div className="text-2xl font-bold text-blue-900">Synchro-9</div> */}
-        <div className="flex items-center space-x-2"> 
-          <Image src={logo} alt="Logo" width={100} height={100} />   </div>
-        <nav className="flex items-center space-x-4">
-          <Link href="/solutions">Solutions</Link>
-          <Link href="/pricing">Pricing</Link>
-          <Link href="/resources">Resources</Link>
-          <Link href="/login">Log in</Link>
-          <button className="hidden md:block bg-black text-white px-4 py-2 rounded ">Start free trial</button>
-        </nav>
+const Header = () => (
+  <header >
+  {/* <header className="bg-gradient-to-r from-blue-200 to-cyan-200 sticky top-0 z-50"> this is for fixed navbar  */}
+    <div className="container mx-auto flex items-center justify-between p-4 ">
+      {/* <div className="text-2xl font-bold text-blue-900">Synchro-9</div> */}
+      <div className="flex items-center justify-center w-full md:w-auto ">
+        <Image src={logo} alt="Logo" className="md:w-3/4 w-48" />
       </div>
-    </header>
+      <nav className="flex items-center space-x-4 /*text-black*/">
+        <Link href="/solutions" className="hidden md:block">
+          Solutions
+        </Link>
+        <Link href="/pricing" className="hidden md:block">
+          Pricing
+        </Link>
+        <Link href="/resources" className="hidden md:block">
+          Resources
+        </Link>
+        <Link href="/login" className="hidden md:block">
+          Log in
+        </Link>
 
-
+        <ShinyButton text="CONTACT US" className="hidden md:block rounded " />
+      </nav>
+    </div>
+  </header>
+);
 
 export default Header;
-
