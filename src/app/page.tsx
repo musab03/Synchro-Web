@@ -11,6 +11,7 @@ export default function Home() {
     <>
     {/* bg-gradient-to-r from-[#7dddf3] to-[#fbc0f5] */}
     <main className="min-h-screen bg-gradient-to-r from-blue-200 to-cyan-200 antialiased bg-grid-white/[0.02]">
+    {/* <main className="min-h-screen bg-[#F8F7F2] antialiased bg-grid-white/[0.02]"> */}
 
    
     <Header/>

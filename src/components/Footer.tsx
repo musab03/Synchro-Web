@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bg-white/[0.5] rounded-tl-3xl lg:rounded-tl-large py-8">
+    <footer className="bg-white/[0.5]  py-8">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {/* Company Section */}

@@ -7,8 +7,9 @@ import logo from "../../public/images/ai.svg";
 import ShinyButton from "@/components/magicui/shiny-button";
 
 const Header = () => (
-  <header >
-  {/* <header className="bg-gradient-to-r from-blue-200 to-cyan-200 sticky top-0 z-50"> this is for fixed navbar  */}
+  <header className="">
+    {/* this is for sticky/fixed navbar */}
+{/* <header className="bg-gradient-to-r from-blue-200 to-cyan-200 sticky top-0 z-50">   */}
     <div className="container mx-auto flex items-center justify-between p-4 ">
       {/* <div className="text-2xl font-bold text-blue-900">Synchro-9</div> */}
       <div className="flex items-center justify-center w-full md:w-auto ">

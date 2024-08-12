@@ -3,7 +3,7 @@ import RotatingCloud from "@/components/CardsData/RotatingCloud";
 
 const ServiceSection = () => {
   return (
-    <div className="min-h-screen py-16">
+    <div className=" bg-gray-900  min-h-screen py-16">
     {/* <div className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 min-h-screen py-16"> */}
       <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between text-white">
         <div className="w-full rounded-xl py-16 flex flex-col-reverse md:flex-row items-center justify-between text-white">
